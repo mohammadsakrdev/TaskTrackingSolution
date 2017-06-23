@@ -122,6 +122,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Home.html" />
+    <Content Include="Images\facebook-icon.png" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\Twitter_bird_icon.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -933,7 +936,6 @@
     <Folder Include="Content\" />
     <Folder Include="Controllers\" />
     <Folder Include="Employees\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
     <Folder Include="ProjectManagement\" />
     <Folder Include="Services\" />
