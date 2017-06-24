@@ -7,31 +7,31 @@ using System.Web.Http;
 
 namespace TaskTrackingAPI.Controllers
 {
-    public class TTEmployeesController : ApiController
+    public class UserTasksController : ApiController
     {
-        // GET: api/TTEmployees
+        // GET: api/UserTasks
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/TTEmployees/5
+        // GET: api/UserTasks/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/TTEmployees
+        // POST: api/UserTasks
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/TTEmployees/5
+        // PUT: api/UserTasks/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/TTEmployees/5
+        // DELETE: api/UserTasks/5
         public void Delete(int id)
         {
         }
