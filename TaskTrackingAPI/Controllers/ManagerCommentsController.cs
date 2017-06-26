@@ -4,36 +4,44 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
+using TaskTrackingAPI.Models;
 
 namespace TaskTrackingAPI.Controllers
 {
+    [EnableCors(origins: "http://localhost:55058", headers: "*", methods: "*")]
     public class ManagerCommentsController : ApiController
     {
-        // GET: api/ManagerComments
-        public IEnumerable<string> Get()
+        // GET api/ptmanagercomments
+        [Route("api/managercomments")]
+        public IEnumerable<ManagerComment> Get()
         {
-            return new string[] { "value1", "value2" };
+            return ManagerCommentsRepository.GetAllManagerComments();
         }
 
-        // GET: api/ManagerComments/5
-        public string Get(int id)
+        // GET api/ptmanagercomments/5
+        [Route("api/managercomments/{id?}")]
+        public ManagerComment Get(int id)
         {
-            return "value";
+            return ManagerCommentsRepository.GetManagerComment(id);
         }
 
-        // POST: api/ManagerComments
-        public void Post([FromBody]string value)
+        [Route("api/managercomments")]
+        public IEnumerable<ManagerComment> Post(ManagerComment comment)
         {
+            return ManagerCommentsRepository.InsertManagerComments(comment);
         }
 
-        // PUT: api/ManagerComments/5
-        public void Put(int id, [FromBody]string value)
+        [Route("api/managercomments")]
+        public IEnumerable<ManagerComment> Put(ManagerComment comment)
         {
+            return ManagerCommentsRepository.UpdateManagerComments(comment);
         }
 
-        // DELETE: api/ManagerComments/5
-        public void Delete(int id)
+        [Route("api/managercomments")]
+        public IEnumerable<ManagerComment> Delete(ManagerComment comment)
         {
+            return ManagerCommentsRepository.DeleteManagerComments(comment);
         }
     }
 }
