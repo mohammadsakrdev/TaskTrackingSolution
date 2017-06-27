@@ -1,15 +1,17 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="TaskTrackingModule">
 <head>
-    <title>Task Tracking Home Page</title>
     <link href="CSS/amelia.bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Controllers/HomeController.js"></script>
     <link href="CSS/Site.css" rel="stylesheet" />
+    <title>Task Tracking Home Page</title>
     <meta charset="utf-8" />
 </head>
-<body>
+<body ng-controller="HomeController">
     <!--Nav-->
     <div class="navbar navbar-default">
         <div class="navbar-header">
@@ -49,6 +51,7 @@
     <!--Content-->
     <div style="margin-left: 10%; margin-right: 10%;">
         <!--carousel-->
+        <p>{{CompanyName}}</p>
         <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel" style="height: 250px;">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">

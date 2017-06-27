@@ -18,8 +18,8 @@ namespace TaskTrackingAPI
             json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             config.Formatters.Remove(config.Formatters.XmlFormatter);
 
-            // Web API routes
-            //config.MapHttpAttributeRoutes();
+            //Web API routes
+            config.MapHttpAttributeRoutes();
 
             //config.Routes.MapHttpRoute(
             //    name: "DefaultApi",
