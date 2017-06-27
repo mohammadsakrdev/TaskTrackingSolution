@@ -7,6 +7,7 @@
     <script src="../Scripts/jquery-3.1.1.min.js"></script>
     <script src="../Scripts/angular.min.js"></script>
     <script src="../Scripts/app.js"></script>
+    <script src="../Services/UserStoriesService.js"></script>
     <script src="../Controllers/UserStoriesController.js"></script>
     <link href="../CSS/Site.css" rel="stylesheet" />
     <meta charset="utf-8" />
@@ -17,23 +18,34 @@
         <thead>
             <tr class="info">
                 <td>
-                    User Story ID
+                    Project Task ID
                 </td>
                 <td>
-                    User Story
+                    Start Date
+                </td>
+                <td>
+                    End Date
+                </td>
+                <td>
+                    Task Completion (%)
                 </td>
             </tr>
         </thead>
         <tbody>
-            <tr class="success">
+            <tr class="success" ng-repeat="Task in Tasks">
                 <td>
-                    {{Stories.userStoryID}}
+                    {{Task.projectTaskID}}
                 </td>
                 <td>
-                    {{Stories.story}}
+                    {{Task.taskStartDate}}
+                </td>
+                <td>
+                    {{Task.taskEndDate}}
+                </td>
+                <td>
+                    {{Task.taskCompletion}} &nbsp;%
                 </td>
             </tr>
         </tbody>
-    </table>
-    </body>
+</body>
 </html>

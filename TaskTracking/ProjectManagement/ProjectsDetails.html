@@ -7,6 +7,7 @@
     <script src="../Scripts/jquery-3.1.1.min.js"></script>
     <script src="../Scripts/angular.min.js"></script>
     <script src="../Scripts/app.js"></script>
+    <script src="../Services/ProjectsService.js"></script>
     <script src="../Controllers/ProjectsController.js"></script>
     <link href="../CSS/Site.css" rel="stylesheet" />
 	<meta charset="utf-8" />
@@ -34,21 +35,21 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="success">
+            <tr class="success" ng-repeat="Project in Projects">
                 <td>
-                    {{Projects.projectID}}
+                    {{Project.projectID}}
                 </td>
                 <td>
-                    {{Projects.projectName}}
+                    {{Project.projectName}}
                 </td>
                 <td>
-                    {{Projects.startDate |date:'short'}}
+                    {{Project.startDate}}
                 </td>
                 <td>
-                    {{Projects.endDate |date:'short'}}
+                    {{Project.endDate}}
                 </td>
                 <td>
-                    {{Projects.clientName}}
+                    {{Project.clientName}}
                 </td>
             </tr>
         </tbody>

@@ -25,12 +25,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="success">
+            <tr class="success" ng-repeat="Comment in Comments">
                 <td>
-                    {{Comments.managerCommentID}}
+                    {{Comment.managerCommentID}}
                 </td>
                 <td>
-                    {{Comments.comments}}
+                    {{Comment.comments}}
                 </td>
             </tr>
         </tbody>
