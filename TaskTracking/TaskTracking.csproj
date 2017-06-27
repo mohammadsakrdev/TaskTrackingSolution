@@ -903,6 +903,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Employees\EmployeesDetails.html" />
+    <Content Include="Services\EmployeesService.js" />
     <Content Include="Tasks\ProjectTaskDetails.html" />
     <Content Include="UserStories\UserStoryDetails.html" />
     <Content Include="Web.config" />
@@ -947,7 +948,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
