@@ -125,13 +125,17 @@
     <Content Include="Controllers\UserStoriesController.js" />
     <Content Include="CSS\amelia.bootstrap.min.css" />
     <Content Include="CSS\Site.css" />
+    <Content Include="Employees\EmployeeInsert.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Home.html" />
     <Content Include="Images\facebook-icon.png" />
     <Content Include="Images\linkedin.png" />
     <Content Include="Images\Twitter_bird_icon.png" />
+    <Content Include="Layout.html" />
     <Content Include="ProjectManagement\ManagerCommentDetails.html" />
+    <Content Include="ProjectManagement\ProjectInsert.html" />
+    <Content Include="ProjectManagement\ProjectModify.html" />
     <Content Include="ProjectManagement\ProjectsDetails.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -909,7 +913,9 @@
     <Content Include="Services\ProjectTasksService.js" />
     <Content Include="Services\UserStoriesService.js" />
     <Content Include="Tasks\ProjectTaskDetails.html" />
+    <Content Include="Tasks\ProjectTaskInsert.html" />
     <Content Include="UserStories\UserStoryDetails.html" />
+    <Content Include="UserStories\UserStoryInsert.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
